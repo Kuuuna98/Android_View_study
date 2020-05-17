@@ -1,4 +1,4 @@
-package com.example.study_the_various_screen_configurations_of_an_application.SwipeView_1;
+package com.example.study_the_various_screen_configurations_of_an_application.SwipeView_basic;
 
 
 import android.support.v4.app.Fragment;
@@ -12,9 +12,9 @@ import com.example.study_the_various_screen_configurations_of_an_application.R;
 
 import me.relex.circleindicator.CircleIndicator;
 
-public class SwipeView extends AppCompatActivity {
+public class SwipeView_basic extends AppCompatActivity {
 
-    private static final String TAG = "SwipeView";
+    private static final String TAG = "SwipeView_basic";
     private FragmentPagerAdapter adapterViewPager;
 
 
@@ -51,11 +51,11 @@ public class SwipeView extends AppCompatActivity {
             switch (position) {
                 case 0:
 
-                    return Fragment_1.newInstance();
+                    return SVb_Fragment_1.newInstance();
                 case 1:
-                    return Fragment_2.newInstance();
+                    return SVb_Fragment_2.newInstance();
                 case 2:
-                    return Fragment_3.newInstance();
+                    return SVb_Fragment_3.newInstance();
                 default:
                     return null;
             }
