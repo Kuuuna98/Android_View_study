@@ -1,10 +1,12 @@
 package com.example.study_the_various_screen_configurations_of_an_application.SwipeView_basic;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.study_the_various_screen_configurations_of_an_application.R;
 
@@ -29,8 +31,10 @@ public class SVb_Fragment_1 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_1, container, false);
-
-        return view;
+        View fv = inflater.inflate(R.layout.fragment_1, container, false);
+        TextView textView = fv.findViewById(R.id.page_num);
+        textView.setText("첫 번째 화면");
+        textView.setBackgroundColor(Color.parseColor("#f5c88f"));
+        return fv;
     }
 }

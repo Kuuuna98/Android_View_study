@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f08080">
+    android:background="#f5f4df">
 
     <TextView
+        android:id="@+id/pageSwipe_num"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="두번째 화면"
-        android:textStyle="bold"
-        android:textSize="40dp"
+        android:textSize="20dp"
         android:gravity="center"/>
 
 </LinearLayout>

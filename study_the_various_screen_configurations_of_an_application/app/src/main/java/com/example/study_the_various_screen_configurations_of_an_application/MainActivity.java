@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.study_the_various_screen_configurations_of_an_application.SwipeView_basic.SwipeView_basic;
+import com.example.study_the_various_screen_configurations_of_an_application.TabView_swipe.TabView_swipe;
 import com.example.study_the_various_screen_configurations_of_an_application.TabView_basic.TabView_basic;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,8 +25,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClick_SwipeViewTab(View view) {
+    public void onClick_TabViewBasic(View view) {
         Intent intent = new Intent(getApplicationContext(), TabView_basic.class);
+        startActivity(intent);
+    }
+
+    public void onClick_TabViewSwipe(View view) {
+        Intent intent = new Intent(getApplicationContext(), TabView_swipe.class);
         startActivity(intent);
     }
 

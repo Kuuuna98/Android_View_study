@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TabView_basic.TabView_basic"></activity>
+        <activity android:name=".TabView_swipe.TabView_swipe"></activity>
+        <activity android:name=".TabView_basic.TabView_basic" />
         <activity android:name=".SwipeView_basic.SwipeView_basic" />
         <activity android:name=".MainActivity">
             <intent-filter>
